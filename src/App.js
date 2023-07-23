@@ -1,25 +1,21 @@
-import logo from './logo.svg';
+// Import the React library
+import React from 'react';
+// Import the App.css file for styling
 import './App.css';
+// Import the PathfindingVisualizer component
+import PathfindingVisualizer from './PathfindingVisualizer/PathfindingVisualizer';
 
+// Define the App component as a function component
 function App() {
+  // The return statement specifies what the component should render
   return (
+    // Render a div with the class name "App"
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      {/*Render the PathfindingVisualizer component inside the div*/}
+      <PathfindingVisualizer></PathfindingVisualizer>
     </div>
   );
 }
 
+// Export the App component as the default export
 export default App;
